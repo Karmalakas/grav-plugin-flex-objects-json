@@ -2,7 +2,7 @@
 {% set directory = flex.directory(type) %}
 
 {% if directory %}
-    {"objects":{{ json_encode(directory.collection)|raw }}}
+    {"objects":{{ directory.collection|json_encode()|raw }}}
 {% else %}
     {% include 'flex-objects/views/404.json.twig' %}
 {% endif %}

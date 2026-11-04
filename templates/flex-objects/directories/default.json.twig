@@ -15,4 +15,4 @@
     }]) %}
 {% endfor %}
 
-{"directories":{{ json_encode(result)|raw }}}
+{"directories":{{ result|json_encode()|raw }}}
