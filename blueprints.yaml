@@ -1,7 +1,7 @@
 name: Flex Objects Json
 slug: flex-objects-json
 type: plugin
-version: 0.2.0
+version: 0.2.1
 description: Add JSON templates for Flex Objects
 icon: list-alt
 author:
