@@ -1,8 +1,8 @@
-{% set flex = grav.get('flex_objects') %}
-{% set directory = flex.directory(type) %}
+{%- set flex = grav.get('flex_objects') -%}
+{%- set directory = flex.directory(type) -%}
 
-{% if directory %}
+{%- if directory -%}
     {"objects":{{ directory.collection|json_encode()|raw }}}
-{% else %}
-    {% include 'flex-objects/views/404.json.twig' %}
-{% endif %}
+{%- else -%}
+    {%- include 'flex-objects/views/404.json.twig' -%}
+{%- endif -%}
